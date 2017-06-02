@@ -6,8 +6,13 @@ package com.szymon.factory;
 public class Application {
     public static void main(String[] args) {
 
-        AudiFactory audiFactory = new AudiFactory();
-        Car car = audiFactory.buildCar("a3");
+//        AudiFactory audiFactory = new AudiFactory();
+//        Car car = audiFactory.buildCar("a3");
+
+        AbstractCarFactory abstractCarFactory = new AbstractCarFactory();
+        Car car = abstractCarFactory.buildAudiCar("a3");
+        Car car2 = abstractCarFactory.buildBMW("x5");
+        Car car3 = abstractCarFactory.buildMercedess("s600");
 
 //        Engine audiEngine = new Engine(200, 3000, "diesel");
 //        Wheels wheels = new Wheels(18, "summer");
