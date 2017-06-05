@@ -1,7 +1,19 @@
 package com.szymon.builder;
 
-/**
- * Created by RENT on 2017-06-05.
- */
+import lombok.Builder;
+import lombok.Data;
+
+
+@Builder
+@Data
 public class User {
+
+    private String firstName;
+
+    private String lastName;
+
+    private String phoneNumber;
+
+    private int age;
+
 }
