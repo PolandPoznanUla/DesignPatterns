@@ -14,7 +14,7 @@ public class Apllication {
 
         System.out.println(user);
 
-        
+
     }
 
 }
