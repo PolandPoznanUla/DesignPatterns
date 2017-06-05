@@ -32,7 +32,7 @@ public class EmergencyChain {
         invoke(chainElement);
     }
 
-    private void invoke(int chainElement) {
+    private void invoke(ChainElement chainElement) {
         if (chainElement != null) {
             chainElement.doAction();
         } else {
